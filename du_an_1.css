@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(/font/UTM\ Duepuntozero.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(/font/UTM\ Duepuntozero.ttf);
+font-weight: bold;
+}
+body{
+    font-family: 'Roboto';
+}
+.container{
+    width:100%;
+   height: 105px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.logo img{
+    width: 130px;
+    height: 100px;
+   margin-left:80px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+   padding-left: 30px;
+}
+a:hover{
+    color: orangered;
+}
+.text button.dangki{
+    width: 150px;
+    height: 40px;
+    background-color:black;
+    color: white;
+    border-radius: 60px;
+    border: 2px solid white;
+    margin-left: 90px;
+}
+.text1 button.dangnhap{
+    width: 150px;
+    height: 40px;
+    background-color:orangered;
+    color: white;
+    border-radius: 60px;
+    border: 2px solid orangered;
+    margin-right: 40px;
+}
+.text:hover button.dangki{
+    transform: scale(1.1);
+    transition: 1s;
+}
+ .text1:hover button.dangnhap{
+    transform: scale(1.1);
+    transition: 1s;
+} 
+.home{
+    background-color: black;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height:700px ;
+    bottom:500px;
+ 
+}
+.pre, .next{
+    cursor:pointer;
+    position:absolute;
+    top:47%;
+    width:auto;
+    padding:16px;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease-in-out;
+    border-radius:0 3px 3px 0;
+    border:none;
+   position: absolute;
+}
+.pre:hover, .next:hover{
+    background-color:rgba(0,0,0,0.8);
+}
+.next{
+    right:0;
+    border-radius:3px 0 0 3px;
+    
+}
+.pre{
+    left:0;
+    border-radius:0 3px 3px 0;
+}
+.content1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.text2{
+    display: flex;
+}
+.tat_ca{
+    margin-top: 40px;
+margin-bottom: 60px;
+margin-left: 770px;
+font-size: 30px;
+font-weight:bold;
+color: white;
+}
+.text2 h1{
+    margin-left: 130px;
+    margin-top: 40px;
+    
+}
+h1 {
+margin-top: 70px;
+margin-bottom: 60px;
+margin-left: 70px;
+font-size: 40px;
+font-weight:bold;
+color: white;
+}
+.content1 img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 40px;
+    
+   
+}
+.con_nhot:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.giao_lo:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.hanh_phuc:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.ke_an_danh:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.ki_an:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.nha_ba_nu:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.dao_pho:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.yeu_lai:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.mong_vuot:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.wish:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.em_va_trinh:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.marvel:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.nguoi_vo:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.quynh_hoa:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.chiem_doat:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.mi_nhan:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.oan-hon:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.tro_tan:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.quy_lun:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.vong_am:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.nha_vit:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.dau_truong:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.nam_dem:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.the_loai{
+    /* margin-left:70px ; */
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: grey;
+}
+.ten_phim{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.ten_phim:hover a{
+
+    color:white;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color:black;
+}
+.cs{
+    margin-top: 20px;
+}
+.footer-links {
+    color: white;
+    justify-content: center;
+    display: flex;  
+    text-align: center;
+       
+} 
+.footer-links:hover a{
+color: white;
+}
+.icon{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.dia_chi{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
