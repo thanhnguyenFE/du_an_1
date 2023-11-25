@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="../dist/du_an_1.css">
-
-</head>
-<body>
-    <section class="home">
+<section class="home">
     <section class="banner" id="hien_anh">
-        <img src="/img/amazing-dark-knight-rises-1920x1080-wallpaper-9596.jpg" alt="" width="1440px" height="500px" />
+        <img src="../img/amazing-dark-knight-rises-1920x1080-wallpaper-9596.jpg" alt="" width="1440px" height="500px" />
         <button class="pre" onclick="pre()">&#10094;</button>
         <button class="next" onclick="next()">&#10095;</button>
     </section>
@@ -21,8 +10,24 @@
         </section>
     
     <section class="content1">
-        
-        <section class="con_nhot">
+        <?php
+        $i=0;
+             foreach ($phimnew as $phim) {
+                extract($phim);
+                // $hinh=$img_path.$image;
+                if(($i == 2) || ($i ==5) || ($i ==8)){
+                    $mr = "";
+                  }else{
+                    $mr = "mr";
+                  }
+                echo '<section class="con_nhot">
+                <img src="/img/giao_lo.webp" alt="">
+                <p class="the_loai">'.$category_name.'</p>
+             <h2 class="ten_phim"><a href="#">'.$title.'</a></h2> 
+            </section>';
+             }
+        ?>
+        <!-- <section class="con_nhot">
             <img src="/img/con_nhot.webp" alt="" >
             <p class="the_loai">Hài,Tâm lý,Tình cảm</p>
          <h2 class="ten_phim"><a href="#"> CON NHÓT MÓT CHỒNG</a></h2> 
@@ -148,6 +153,5 @@
     </section>
         
 <script src="main.js">
-</script>
-</body>
-</html>
+
+</script> -->
