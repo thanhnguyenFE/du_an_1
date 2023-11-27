@@ -1,6 +1,4 @@
-<?php
-$listdanhmuc= loadall_danhmuc();
-?>
+
 <div class="wrapper">
     <!-- =========== Sidebar for admin dashboard =========== -->
 
@@ -33,7 +31,7 @@ $listdanhmuc= loadall_danhmuc();
                     </a>
                     <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Tất cả</a>
+                            <a href="index.php?act=listphim" class="sidebar-link">Tất cả</a>
                         </li>
                         <?php
                         foreach ($listdanhmuc as $item){
@@ -67,6 +65,12 @@ $listdanhmuc= loadall_danhmuc();
                             <a href="#" class="sidebar-link">Page2</a>
                         </li>
                     </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fa-solid fa-file-lines pe-2"></i>
+                        User
+                    </a>
                 </li>
             </ul>
         </div>
