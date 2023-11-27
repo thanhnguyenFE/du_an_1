@@ -9,14 +9,15 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">TÊN LOẠI</th>
-                        <th scope="col">GIÁ SẢN PHẨM</th>
+                        <th scope="col">MÔ TẢ</th>
                         <th scope="col">HÌNH</th>
                         <th scope="col">THỜI LƯỢNG</th>
+                        <th scope="col">Chức năng</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-                    foreach ($listsp as $item){
+                    foreach ($list_movie as $item){
                         extract($item);
                         $hinhpath="../upload/".$image;
                         if(is_file($hinhpath)){
@@ -31,7 +32,10 @@
                                        <td>'.$description.'</td>
                                        <td>'.$image.'</td>
                                        <td>'.$duration.'</td>
-                          
+                                       <td>
+                                       <button disabled>Sửa</button>
+                                       <button disabled>Xóa</button>
+                                       </td>
                                 </tr>';
                     }
                     ?>
