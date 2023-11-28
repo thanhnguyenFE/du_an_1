@@ -4,29 +4,33 @@
         <button class="pre" onclick="pre()">&#10094;</button>
         <button class="next" onclick="next()">&#10095;</button>
     </section>
-    <section class="text2"> 
-        <h1>Phim đang chiếu</h1> 
-        <p class="tat_ca"><ins><a href="#">Xem tất cả</a></ins></p>
-        </section>
-    
-    <section class="content1">
-        <?php
-        $i=0;
-             foreach ($phimnew as $phim) {
-                extract($phim);
-                // $hinh=$img_path.$image;
-                if(($i == 2) || ($i ==5) || ($i ==8)){
-                    $mr = "";
-                  }else{
-                    $mr = "mr";
-                  }
-                echo '<section class="con_nhot">
-                <img src="/img/giao_lo.webp" alt="">
-                <p class="the_loai">'.$category_name.'</p>
-             <h2 class="ten_phim"><a href="#">'.$title.'</a></h2> 
-            </section>';
-             }
+    <?php 
+    foreach($listdanhmuc as $item){
+        extract($item);
         ?>
+         <h1>
+            <?= $category_name ?>
+        </h1> 
+        <p class="tat_ca"><ins><a href="#">Xem tất cả</a></ins></p>
+        </section>';
+        <?php
+        $list_movie = load_all_movie_one_category($category_id);
+        if(!empty($list_movie)){
+            foreach($list_movie as $phim){
+                extract($phim);
+                ?>
+                <section class="con_nhot">
+                    <img src="../img/giao_lo.webp" alt="">
+                 <h2 class="ten_phim"><a href="#"><?= $title ?></a></h2> 
+                </section>
+                <?php
+            }
+        }
+        
+    }
+    ?>
+
+
         <!-- <section class="con_nhot">
             <img src="/img/con_nhot.webp" alt="" >
             <p class="the_loai">Hài,Tâm lý,Tình cảm</p>

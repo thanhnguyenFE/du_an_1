@@ -7,7 +7,7 @@
     <link href="../dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="../dist/du_an_1.css">
 </head>
-<body>
+<body style="background-color: black">
     <section class="container">
         <header class="header">
             <section class="logo">
@@ -32,6 +32,5 @@
     </section> 
     
     </header>
-    <script src="main.js">
 
 </script>

@@ -25,8 +25,6 @@
         <p>Copyright 2023. NCC All Rights Reservered. Dev by Anvui.vn</p>
      </section>
     </section>
-    <script src="main.js">
-
-</script>
+    <script src="../main.js"></script>
 </body>
 </html> 
