@@ -11,7 +11,6 @@
                         <th scope="col">TÊN LOẠI</th>
                         <th scope="col">MÔ TẢ</th>
                         <th scope="col">HÌNH</th>
-                        <th scope="col">THỜI LƯỢNG</th>
                         <th scope="col">Chức năng</th>
                     </tr>
                     </thead>
@@ -19,6 +18,8 @@
                     <?php
                     foreach ($list_movie as $item){
                         extract($item);
+                        $update="index.php?act=update&id-movie=".$movie_id;
+                        $soft_delete="index.php?act=soft_delete&id-movie=".$movie_id;
                         $hinhpath="../upload/".$image;
                         if(is_file($hinhpath)){
                             $hinhpath = "<img src='".$hinhpath."' width='100px' height='100px'>";
@@ -30,11 +31,10 @@
                                        <th scope="row">'.$movie_id.'</th>
                                        <td>'.$title.'</td>
                                        <td>'.$description.'</td>
-                                       <td>'.$image.'</td>
-                                       <td>'.$duration.'</td>
+                                       <td>'.$hinhpath.'</td>
                                        <td>
-                                       <button disabled>Sửa</button>
-                                       <button disabled>Xóa</button>
+                                         <a href="'.$soft_delete.'"><input type="button" value="Xóa" onclick="return confirm(\'Bạn có muốn ẩn xóa sản phẩm này chứ?\')"></a>
+                                       <a href="'.$update.'"><input type="button" value="Sửa"></a>
                                        </td>
                                 </tr>';
                     }
@@ -43,7 +43,7 @@
                 </table>
             </div>
             <div class="row mb10 ">
-                <a href="#"> <input  class="mr20" type="button" value="NHẬP THÊM"></a>
+                <a href="index.php?act=add-phim"> <input  type="button" value="NHẬP THÊM"></a>
             </div>
     </div>
 </div>
