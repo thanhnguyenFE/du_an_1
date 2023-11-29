@@ -1,13 +1,4 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../dist/du_an_1.css"> -->
-</head>
-<body>
+
  <section class="footer">
      <section class="cs">
        <section class="footer-links">
@@ -17,7 +8,7 @@
         <a href="#">Vé xem phim</a>
         <a href="#">Liên hệ</a>
       </section>
-     </section> 
+     </section>
      <section class="icon">
         <img src="img/icon_yb.jpg" alt="" width="40px" height="40px">
         <img src="img/icon_zalo.jpg" alt="" width="40px" height="40px">
@@ -34,5 +25,6 @@
         <p>Copyright 2023. NCC All Rights Reservered. Dev by Anvui.vn</p>
      </section>
     </section>
+    <script src="../main.js"></script>
 </body>
 </html> 

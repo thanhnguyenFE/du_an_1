@@ -1,8 +1,10 @@
 <?php 
 include "../modal/pdo.php";
 include '../modal/phim.php';
-include '../src/header.html';
-$phimnew=loadall_sanpham();
+include '../modal/danhmuc.php';
+// include '../src/header.html';
+include '../src/view/header.php';
+$listdanhmuc = loadall_danhmuc();
 // print_r ($phimnew);
 
 if(isset($_GET['act']) && ($_GET['act'] != "")){
