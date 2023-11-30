@@ -13,7 +13,7 @@
             <section class="logo">
             <img src="../img/Cineworld-logo-1200x800-1.jpg" alt="" >
             </section>
-        <nav> 
+        <nav class="nav-header">
             <a href="#">Trang chủ</a>
             <a href="#">Lịch chiếu</a>
             <a href="#">Tin tức</a>
@@ -32,5 +32,6 @@
     </section> 
     
     </header>
+
 
 </script>

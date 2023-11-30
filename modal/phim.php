@@ -56,3 +56,9 @@ function soft_delete($id){
     pdo_execute($sql);
 }
 
+function load_movie_data($id_movie){
+    $sql = "select * from movie where `movie_id` = $id_movie";
+    $result = pdo_query_one($sql);
+    return $result;
+}
+
