@@ -9,6 +9,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
     />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script
             src="https://kit.fontawesome.com/ae360af17e.js"
             crossorigin="anonymous"
