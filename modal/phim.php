@@ -19,6 +19,12 @@ function load_all_movie_one_category($id_category){
     return $list_movie;
 }
 
+function loadone_movie($movie_id){
+    $sql = "SELECT * FROM movie where movie_id = $movie_id";
+  $result = pdo_query_one($sql);
+  return $result;
+}
+
 function load_one_movie($id_movie){
     $sql = "select * from movie inner join movie_category_movie ON movie.movie_id = movie_category_movie.movie_id where movie.movie_id = '.$id_movie.'";
     $result = pdo_query_one($sql);

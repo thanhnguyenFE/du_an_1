@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,9 @@
     <style>
     </style>
 </head>
-<body>
+<body> -->
     <div class="w-full h-[250px] md:h-[300px] xl:h-[473px] relative wrapper">
+     
         <div class="absolute inset-0 w-full h-full">
             <img src="../img/img.webp" alt="" class="object-cover w-full h-full">
         </div>
@@ -21,7 +22,10 @@
                 </div>
                 <div class="text-sm flex flex-col">
                     <div class="flex items-center gap-2 mt-2 text-white">
-                        <h3 class="font-bold text-2xl">NHÀ BÀ NỮ (Vé miễn phí- T16)</h3>
+                        <h3 class="font-bold text-2xl"> <?php
+                        
+                        echo "<p>$title</p>" ?></h3> 
+                       
                         <div class="rounded-xl p-2 border border-white font-bold">2D</div>    
                     </div>
                     <div class="flex items-center mt-2 gap-5 text-sm text-white">
