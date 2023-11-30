@@ -27,6 +27,7 @@ if(isset($_GET['act'])){
             include "phim/add.php";
             break;
         case 'list-category':
+            $listdanhmuc = loadall_danhmuc();
             include 'the_loai/list.php';
             break;
         case 'update-category':
