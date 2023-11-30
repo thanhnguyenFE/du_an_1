@@ -1,4 +1,6 @@
-
+<?php
+ob_start();
+?>
 <div class="wrapper">
     <!-- =========== Sidebar for admin dashboard =========== -->
 
@@ -67,10 +69,36 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="index.php?act=user" class="sidebar-link">
                         <i class="fa-solid fa-file-lines pe-2"></i>
                         User
                     </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.php?act=lich-chieu" class="sidebar-link">
+                        <i class="fa-solid fa-file-lines pe-2"></i>
+                        Lịch chiếu
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a
+                            href="index.php?act=comment"
+                            class="sidebar-link collapsed"
+                            data-bs-target="#comment"
+                            data-bs-toggle="collapse"
+                            aria-expanded="false"
+                    >
+                        <i class="fa-solid fa-file-lines pe-2"></i>
+                        Bình luận
+                    </a>
+                    <ul id="comment" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="index.php?act=comment&list=true" class="sidebar-link">Danh sách</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="index.php?act=comment&thongke=true" class="sidebar-link">Thống kê</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
