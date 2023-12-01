@@ -83,3 +83,15 @@ function convertToHourAndMinute($timeString) {
         'minute' => $minute
     );
 }
+
+function convertDateFormat($inputDate) {
+    // Chuyển đổi định dạng ngày
+    $formattedDate = date("d/m/Y", strtotime($inputDate));
+    return $formattedDate;
+}
+
+function load_infor_ticket($id_schedule){
+    $sql = "select * from schedules where `schedule_id` = $id_schedule";
+    $result = pdo_query_one($sql);
+    return $result;
+}
