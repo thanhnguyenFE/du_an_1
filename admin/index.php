@@ -128,7 +128,7 @@ if(isset($_GET['act'])){
                 break;
             
         case 'comment':
-            $list_comment = loadalll_comment();
+            $list_comment = loadall_comment();
             if(isset($_GET['thongke']) && $_GET['thongke'] = true){
                 include 'comment/thong_ke.php';
             }else{

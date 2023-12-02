@@ -20,9 +20,9 @@ function load_all_movie_one_category($id_category){
 }
 
 function loadone_movie($movie_id){
-    $sql = "SELECT * FROM movie where movie_id = $movie_id";
-  $result = pdo_query_one($sql);
-  return $result;
+    $sql = "SELECT * FROM movie where `movie_id` = $movie_id";
+    $result = pdo_query_one($sql);
+    return $result;
 }
 
 function load_one_movie($id_movie){
@@ -36,7 +36,6 @@ function insert_movie($title, $description,$image, $category_id){
             ('$title', '$description', '$image')";
 
     $movie_id = get_movie_follow_title($title);
-    echo var_dump($movie_id);
     $sql2 = "insert into `movie_category_movie` (`movie_id`, `category_id`) values
             ('$movie_id', '$category_id')";
     pdo_execute($sql);
