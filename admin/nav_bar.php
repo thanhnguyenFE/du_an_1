@@ -75,9 +75,15 @@ ob_start();
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="index.php?act=lich-chieu" class="sidebar-link">
+                    <a href="index.php?act=ds-lichtrinh" class="sidebar-link">
                         <i class="fa-solid fa-file-lines pe-2"></i>
                         Lịch chiếu
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.php?act=list-category" class="sidebar-link">
+                        <i class="fa-solid fa-file-lines pe-2"></i>
+                       Thể Loại
                     </a>
                 </li>
                 <li class="sidebar-item">
