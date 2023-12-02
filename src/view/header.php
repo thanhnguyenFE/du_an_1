@@ -13,25 +13,31 @@
             <section class="logo">
             <img src="../img/Cineworld-logo-1200x800-1.jpg" alt="" >
             </section>
-        <nav class="nav-header">
-            <a href="#">Trang chủ</a>
-            <a href="#">Lịch chiếu</a>
-            <a href="#">Tin tức</a>
-            <a href="#">Khuyến mãi </a>
-            <a href="#">Giá vé</a>
-            <a href="#">Liên hoan phim</a>
-            <a href="#">Giới thiệu</a>
-        </nav>
-        <section class="text">
-        <button class="dangki">Đăng kí </button>
-    </section>
-    <section class="text1">
-        <button class="dangnhap">Đăng nhập </button>
-    </section>
-    
+            <nav class="nav-header">
+                <a href="#">Trang chủ</a>
+                <a href="#">Lịch chiếu</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Khuyến mãi </a>
+                <a href="#">Giá vé</a>
+                <a href="#">Liên hoan phim</a>
+                <a href="#">Giới thiệu</a>
+            </nav>
+            <section class="dangki">
+                <a class="dialog-btn p-0 flex h-full items-center" href="#dk-dialog">Đăng kí</a>
+            </section>
+            <div class="dialog overlay" id="dk-dialog">
+                <a href="#" class="overlay-close"></a>
+
+                <div class="dialog-body">
+                    <a class="dialog-close-btn" href="#">&times;</a>
+                    <h3>F8 là nơi học lập trình miễn phí</h3>
+                    <p>Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng hình ảnh và âm thanh.</p>
+                </div>
+            </div>
+            <section class="dangnhap">
+                <a class="dialog-btn p-0 flex h-full items-center" href="#dn-dialog">Đăng nhập</a>
+            </section>
+        </header>
     </section> 
     
-    </header>
 
-
-</script>
