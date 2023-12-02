@@ -371,7 +371,7 @@
             $result = load_all_category_one_movie($movie_id);
             ?>
             <section class="con_nhot">
-            <a href="index.php?act=chitietphim&movie_id=<?= $movie_id ?>"> <img src="../upload/ <?= $image ?>"></a>
+            <a href="index.php?act=chitietphim&movie_id=<?= $movie_id ?>"> <img src="../upload/"></a>
                 <p class="text-white text-center">
                 <?php 
                 foreach($result as $item){

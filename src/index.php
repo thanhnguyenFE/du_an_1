@@ -39,7 +39,7 @@ if(isset($_GET['act']) && ($_GET['act'] != "")){
         }
     }
 }else{
-   include "../src/view/home.php";
+   include "view/home.php";
   
 }
 ?>

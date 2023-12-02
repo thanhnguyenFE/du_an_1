@@ -6,12 +6,19 @@ function loadall_schedules(){
     $list_schedule = pdo_query($sql);
     return $list_schedule;
 }
-
+function add_schedule($room_id, $movie_id,$schedule_date, $start_time, $end_time){
+    $sql = "INSERT INTO schedules (room_id, movie_id, schedule_date, start_time, end_time) VALUES ('$room_id', '$movie_id', '$schedule_date', '$start_time', '$end_time')";
+    pdo_execute($sql);
+}
 //Hiển thị lịch trình của 1 bộ phim
-
+function update_schedule($room_id, $iddm,$schedule_date, $start_time, $end_time,$schedule_id){
+    $sql = "UPDATE schedules SET room_id = '".$room_id."',movie_id = '".$iddm."',schedule_date = '".$schedule_date."',start_time = '".$start_time."',end_time = '".$end_time."'
+               WHERE schedule_id = ".$schedule_id;
+    pdo_execute($sql);
+}
 function loadall_calendar_one_movie($id_movie){
-    $sql = "select * from schedules where `movie_id` = $id_movie";
-    $result = pdo_query($sql);
+    $sql = "SELECT*FROM schedules where movie_id = ".$id_movie;
+    $result = pdo_query_one($sql);
     return $result;
 };
 
