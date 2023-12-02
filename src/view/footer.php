@@ -10,12 +10,12 @@
       </section>
      </section>
      <section class="icon">
-        <img src="img/icon_yb.jpg" alt="" width="40px" height="40px">
-        <img src="img/icon_zalo.jpg" alt="" width="40px" height="40px">
-        <img src="img/icon_fb1.jpg" alt="" width="40px" height="40px">
-        <img src="img/ch_play.png" alt="" width="143px" height="60px">
-        <img src="img/appStore.svg" alt="" width="143px" height="40px">
-        <img src="img/icon_1.jpg" alt="" width="143px" height="40pxp">
+        <img src="../img/icon_yb.jpg" alt="" width="40px" height="40px">
+        <img src="../img/icon_zalo.jpg" alt="" width="40px" height="40px">
+        <img src="../img/icon_fb1.jpg" alt="" width="40px" height="40px">
+        <img src="../img/ch_play.png" alt="" width="143px" height="60px">
+        <img src="../img/appStore.svg" alt="" width="143px" height="40px">
+        <img src="../img/icon_1.jpg" alt="" width="143px" height="40pxp">
      </section>
      <section class="dia_chi">
         <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>

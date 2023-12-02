@@ -22,11 +22,20 @@
                 <a href="#">Liên hoan phim</a>
                 <a href="#">Giới thiệu</a>
             </nav>
-            <section class="text">
-                <button class="dangki">Đăng kí </button>
+            <section class="dangki">
+                <a class="dialog-btn p-0 flex h-full items-center" href="#dk-dialog">Đăng kí</a>
             </section>
-            <section class="text1">
-                <button class="dangnhap">Đăng nhập </button>
+            <div class="dialog overlay" id="dk-dialog">
+                <a href="#" class="overlay-close"></a>
+
+                <div class="dialog-body">
+                    <a class="dialog-close-btn" href="#">&times;</a>
+                    <h3>F8 là nơi học lập trình miễn phí</h3>
+                    <p>Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng hình ảnh và âm thanh.</p>
+                </div>
+            </div>
+            <section class="dangnhap">
+                <a class="dialog-btn p-0 flex h-full items-center" href="#dn-dialog">Đăng nhập</a>
             </section>
         </header>
     </section> 

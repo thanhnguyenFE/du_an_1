@@ -1,12 +1,12 @@
 <div class="w-full h-[250px] md:h-[300px] xl:h-[473px] relative wrapper">
-    <div class="absolute inset-0 w-full h-full">
-        <img src="../img/img.webp" alt="" class="object-cover w-full h-full">
+    <div class="absolute inset-0 w-full h-full opacity-50" style="opacity: 0.5">
+        <img src="../upload/<?= $image ?>" alt="" class="object-cover w-full h-full">
     </div>
     <div class="absolute bg-primary/60 inset-0 w-full h-full z-10"></div>
     <div class="hidden xl:block absolute w-full inset-0 m-auto z-20">
         <div class="w-full max-w-4xl m-auto h-[473px] py-7 pt-24 flex gap-10">
-            <div class="relative h-[333px] min-w-[238px] shadow-lg ">
-                <img src="../img/img.webp" alt="" class="object-cover w-full h-full">
+            <div class="relative h-[333px] min-w-[238px] shadow-lg" style="opacity: 0.8">
+                <img src="../upload/<?= $image ?>" alt="" class="object-cover w-full h-full">
             </div>
             <div class="text-sm flex flex-col">
                 <div class="flex items-center gap-2 mt-2 text-white">
