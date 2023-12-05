@@ -1,3 +1,9 @@
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $user_id = $_SESSION['id'];
+    insert_binhluan($user_id, $id_movie, $_POST['comment']);
+}
+?>
 <div class="w-full h-[250px] md:h-[300px] xl:h-[473px] relative wrapper">
     <div class="absolute inset-0 w-full h-full opacity-50" style="opacity: 0.5">
         <img src="../upload/<?= $image ?>" alt="" class="object-cover w-full h-full">
@@ -144,64 +150,29 @@ if(isset($_GET['time'])){
                                 <?php echo $comment?>
                             </div>
                         </td>
-                        <td class="px-3 py-3.5 text-sm"><?php echo date("d/m/Y", strtotime($comment_date))?></td>
+                        <td class="px-3 py-3.5 text-sm text-white"><?php echo date("d/m/Y", strtotime($comment_date))?></td>
                     </tr>
                 <?php }
                 ?>
                 </tbody>
             </table>
-            <?php
-            if(isset($_SESSION['user']) && $_SESSION['user']){
-                echo '<div class="box_search">
-                <form action="index.php?act=sanphamct&idsp='.$id.'" method="POST">
-                    <input type="hidden" name="idpro" value="'.$id.'">
-                    <input type="text" name="noidung" >
-                    <input type="submit" name="guibinhluan" value="Gửi bình luận" placeholder="Hãy nhập gì đó .....">
+        </div>
+        <?php
+        if(isset($_SESSION['user'])){
+            echo '<div class="mt-5 w-1/2">
+                <form action="index.php?act=movie-detail&id-movie='.$movie_id.'" method="POST">
+                   <div class="mb-6">
+                       <label for="comment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">'.$_SESSION['user'].'</label>
+                       <input name="comment" type="text" id="comment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nhập bình luận ...." required>
+                   </div>
+                   <button name="submit" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                 </form>
             </div>';
-            }
-            ?>
-        </div>
+        }
+        ?>
     </div>
 </div>
-<!--<div class="bg-[#1A1D23] w-full max-w-4xl m-auto text-white p-4 rounded-xl">-->
-<!--    <div class="text-orange-500">ĐÁNH GIÁ SẢN PHẨM</div>-->
-<!--    <div class="w-full">-->
-<!--        <table class="table">-->
-<!--            <thead>-->
-<!--            <tr class="text-orange-500">-->
-<!--                <th scope="col">Người bình luận</th>-->
-<!--                <th scope="col">Nội dung</th>-->
-<!--                <th scope="col">Thời gian</th>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!--            <tbody>-->
-<!--            --><?php
-//            foreach ($list_comment_of_movie as $item){
-//                extract($item);
-//                ?>
-<!--                <tr class="text-white">-->
-<!--                    <td class="scope='row'">--><?php //echo $user_name?><!--</td>-->
-<!--                    <td>--><?php //echo $comment?><!--</td>-->
-<!--                    <td>--><?php //echo date("d/m/Y", strtotime($comment_date))?><!--</td>-->
-<!--                </tr>-->
-<!--            --><?php //}
-//            ?>
-<!--            </tbody>-->
-<!--        </table>-->
-<!--        --><?php
-//        if(isset($_SESSION['user']) && $_SESSION['user']){
-//            echo '<div class="box_search">
-//                <form action="index.php?act=sanphamct&idsp='.$id.'" method="POST">
-//                    <input type="hidden" name="idpro" value="'.$id.'">
-//                    <input type="text" name="noidung" >
-//                    <input type="submit" name="guibinhluan" value="Gửi bình luận" placeholder="Hãy nhập gì đó .....">
-//                </form>
-//            </div>';
-//        }
-//        ?>
-<!--    </div>-->
-<!--</div>-->
+
 
 
 

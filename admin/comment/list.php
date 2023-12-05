@@ -24,8 +24,9 @@
                                        <td>'.$image.'</td>
                                        <td>'.$total.'</td>
                                        <td>
-                                       <button disabled>Sửa</button>
-                                       <button disabled>Xóa</button>
+                                       <button>
+                                       <a href="index.php?act=movie-detail&id-movie='.$movie_id.'">Chi tiết</a>
+                                       </button>
                                        </td>
                                 </tr>';
                 }

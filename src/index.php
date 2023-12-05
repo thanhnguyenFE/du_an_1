@@ -6,6 +6,7 @@ include '../modal/lich_trinh.php';
 include '../modal/room.php';
 include '../modal/comment.php';
 include '../modal/ticket.php';
+include '../modal/user.php';
 include '../src/view/header.php';
 $listphim = loadall_movie();
 $listdanhmuc = loadall_danhmuc();
@@ -35,9 +36,6 @@ if(isset($_GET['act']) && ($_GET['act'] != "")){
                 $date = $_GET['date'];
                 $list_time = loadall_time_one_date($date);
             }
-//            if(isset($_GET['time'])){
-//
-//            }
             include 'view/movie_detail.php';
             break;
         }
@@ -80,6 +78,21 @@ if(isset($_GET['act']) && ($_GET['act'] != "")){
                 }
                 include 'view/payment.php';
             }
+        case "dangxuat":{
+            logout();
+            include "../src/view/home.php";
+            break;
+        }
+        case "info-user":{
+            if(isset($_GET['page']) && $_GET['page'] === 'account'){
+                include "../src/view/profile.php";
+            }
+            else if(isset($_GET['page']) && $_GET['page'] === 'ticket'){
+                $list_ticket = loadall_ticket_of_user($_SESSION['id']);
+                include "../src/view/ticket.php";
+            }
+            break;
+        }
     }
 }else{
    include "../src/view/home.php";
