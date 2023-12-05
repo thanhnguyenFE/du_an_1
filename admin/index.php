@@ -102,11 +102,16 @@ if(isset($_GET['act'])){
                 break;
             case 'edit-lichtrinh':
                     if(isset($_GET['schedule_id'])&&($_GET['schedule_id']>0)){
-                        $dm_lichtrinh=loadall_calendar_one_movie($_GET['schedule_id']);   
+                        $dm_lichtrinh=loadall_calendar_one_movie($_GET['schedule_id']); 
+                        $data = load_infor_ticket($_GET['schedule_id']);
+                        
+                        extract($data);
+                          
                     }  
                     $list_schedule=loadall_schedules();   
                     $list_room = load_all_room();  
                     $listsp = loadall_movie(); 
+                   
                     include 'lich_trinh/update.php';
                     break;
             case 'update-lichtrinh':
