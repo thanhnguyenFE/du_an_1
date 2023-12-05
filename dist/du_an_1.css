@@ -285,15 +285,22 @@ color: white;
 color: white;
 }
 .icon{
-    justify-content: center;
+     
+    /* justify-content: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px;  */
+    
+        display: flex;
+        justify-content: center; /* căn giữa theo chiều ngang */
+        align-items: center; /* căn giữa theo chiều dọc */
+      
 }
 .dia_chi{
     justify-content: center;
     text-align: center;
     margin-top: 10px;
     color: white;
+    margin-bottom: 20px;
 }
 
 .dialog {
