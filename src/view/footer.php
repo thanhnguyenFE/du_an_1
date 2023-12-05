@@ -1,4 +1,12 @@
+<style>
+   .icon{
+     
+         display: flex;
+         justify-content: center; /* căn giữa theo chiều ngang */
+         align-items: center; /* căn giữa theo chiều dọc */
+   }
 
+</style>
  <section class="footer">
      <section class="cs">
        <section class="footer-links">

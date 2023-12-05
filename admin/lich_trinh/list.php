@@ -19,7 +19,9 @@
                 <tbody>
                 <?php
                 foreach ($list_schedule as $item){
+                   
                     extract($item);
+                    $update="index.php?act=edit-lichtrinh&schedule_id=$schedule_id";
                     echo '<tr>
                                        <th scope="row">'.$schedule_id.'</th>
                                        <td>'.$title.'</td>
@@ -28,7 +30,7 @@
                                        <td>'.$start_time.'</td>
                                        <td>'.$end_time.'</td>
                                        <td>
-                                       <button disabled>Sửa</button>
+                                       <a href="'.$update.'"><input type="button" value="Sửa"></a>
                                        <button disabled>Xóa</button>
                                        </td>
                                 </tr>';
@@ -38,7 +40,7 @@
             </table>
         </div>
         <div class="row mb10 ">
-            <a href="index.php?act=lich-chieu&add=true"> <input  class="mr20" type="button" value="NHẬP THÊM"></a>
+            <a href="index.php?act=add-lichtrinh"> <input  class="mr20" type="button" value="NHẬP THÊM"></a>
         </div>
     </div>
 </div>
