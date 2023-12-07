@@ -20,3 +20,10 @@ function load_list_comment_of_movie($id_movie){
     $result = pdo_query($sql);
     return $result;
 }
+
+function insert_binhluan($user_id, $movie_id, $comment){
+    $date = date('Y-m-d');
+    $sql = "INSERT INTO `comment`(`comment`, `user_id`, `movie_id`, `comment_date`) 
+            VALUES ('$comment','$user_id','$movie_id','$date')";
+    pdo_execute($sql);
+}
