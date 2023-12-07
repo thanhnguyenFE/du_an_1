@@ -1,4 +1,5 @@
 <?php 
+
 include "../modal/pdo.php";
 include '../modal/phim.php';
 include '../modal/danhmuc.php';
@@ -7,6 +8,7 @@ include '../modal/room.php';
 include '../modal/comment.php';
 include '../modal/ticket.php';
 include '../src/view/header.php';
+
 $listphim = loadall_movie();
 $listdanhmuc = loadall_danhmuc();
 $list_comment =load_list_comment();
@@ -14,6 +16,9 @@ $list_bill = loadall_booking();
 if(isset($_GET['act']) && ($_GET['act'] != "")){
     $act = $_GET['act'];
     switch($act){
+        case 'bangve':
+            include '../src/view/bangve.php';
+            break;
         case "chitietphim":
             if(isset($_GET['id_movie']) && $_GET['id_movie'] >0){
                 $sp = loadone_movie($_GET['id_movie']);
@@ -80,6 +85,9 @@ if(isset($_GET['act']) && ($_GET['act'] != "")){
                 }
                 include 'view/payment.php';
             }
+        case 'bang-ve':
+            include 'view/bangve.html';
+            break;    
     }
 }else{
    include "../src/view/home.php";

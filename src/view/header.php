@@ -14,11 +14,11 @@
             <img src="../img/Cineworld-logo-1200x800-1.jpg" alt="" >
             </section>
             <nav class="nav-header">
-                <a href="#">Trang chủ</a>
+                <a href="index.php">Trang chủ</a>
                 <a href="#">Lịch chiếu</a>
                 <a href="#">Tin tức</a>
                 <a href="#">Khuyến mãi </a>
-                <a href="#">Giá vé</a>
+                <a href="index.php?act=bang-ve">Giá vé</a>
                 <a href="#">Liên hoan phim</a>
                 <a href="#">Giới thiệu</a>
             </nav>

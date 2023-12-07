@@ -349,3 +349,32 @@ color: white;
     text-decoration: none;
     color: #333;
 }
+.container_bangve {
+    background-color: #111827;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+}
+
+.bangve {
+    width: 100%;
+}
+
+.title_bangve {
+    text-align: center;
+}
+
+.vip {
+    --tw-text-opacity: 1;
+    color: rgb(234 179 8/var(--tw-text-opacity));
+}
+
+.doi {
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68/var(--tw-text-opacity));
+}
+
+tr {
+    font-weight: 600;
+}
